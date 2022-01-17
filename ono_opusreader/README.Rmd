@@ -1,0 +1,36 @@
+title:  "Comparing binary reads of OPUS with ono python package vs. opusreader in R"
+author: "Philipp Baumann, Kompetenzzentrum Boden (KOBO), Datenwissenschaften | philipp.baumann@bfh.ch"
+output:
+  github_document:
+    toc: yes
+    toc_depth: 2
+---
+
+# Setup to reproduce examples
+
+- Use [renv](https://rstudio.github.io/renv/articles/python.html) together with python virtual environments to log and restore dependencies
+
+```
+# install Python virtual environment in Debian
+sudo apt install python3.8-venv
+```
+
+Install [ono](https://pypi.org/project/ono/) via reticulate, Python virtual environments and pip
+
+```{eval=FALSE}
+sudo apt install python3-pip
+pip install ono
+```
+
+```{R, eval= FALSE}
+install.packages("renv")
+install.packages("reticulate")
+library("reticulate")
+virtualenv_create("ono_opusreader")
+use_virtualenv("ono_opusreader")
+virtualenv_install("ono_opusreader", "ono")
+renv::use_python()
+# 1: ~/.virtualenvs/ono_opusreader/bin/python
+renv::snapshot()
+# writes Python packages in requirements.txt
+```
