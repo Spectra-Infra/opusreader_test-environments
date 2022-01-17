@@ -8,11 +8,6 @@
       }
     ]
   },
-  "Python": {
-    "Version": "3.8.10",
-    "Type": "virtualenv",
-    "Name": "/home/philipp/.virtualenvs/ono_opusreader"
-  },
   "Packages": {
     "base64enc": {
       "Package": "base64enc",
