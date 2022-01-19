@@ -1,0 +1,17 @@
+---
+title: "Diagnose and further develop read_opus()"
+author: "Philipp Baumann"
+date: "1/19/2022"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Aims and way forward
+
+This repo contains, as the name suggests, interactive tests and innovations to further develop OPUS binary imports provided by `opusreader::read_opus()`.
+
+1.  Test and compare current development snapshots.
+2.  Analyze which tests against the Bruker version are useful.
