@@ -34,6 +34,8 @@ switchr::install_packages(
     opusreader_ghmain_20211020
 )
 
+library("opusreader")
+
 # regenerate or reverse seed a package manifest
 # from currently available packages
 mani_opusreader_ghmain_20211020 <- libManifest(
@@ -41,7 +43,7 @@ mani_opusreader_ghmain_20211020 <- libManifest(
 )
 
 subdir_pkg_rev_manifests <- file.path(
-    "_pkg_rev_manifests", "opusreader_ghmain_20201020"
+    "_pkg_rev_manifests", "opusreader_ghmain_20211020"
 )
 
 # make the manifest available on this github repo or as gist

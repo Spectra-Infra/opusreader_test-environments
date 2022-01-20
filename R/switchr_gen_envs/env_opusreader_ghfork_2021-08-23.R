@@ -34,6 +34,8 @@ switchr::install_packages(
     opusreader_ghfork_20210823
 )
 
+library("opusreader")
+
 # regenerate or reverse seed a package manifest
 # from currently available packages
 mani_opusreader_ghfork_20210823 <- libManifest(
